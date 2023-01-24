@@ -3,7 +3,29 @@
 
 		--bgColor1: #1B1131;
 		--bgColor2: #9D82D6;
+		--lineColor: rgba(157, 130, 214, 0.2);
 		
+}
+
+
+* {
+
+	box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+
+
+
+}
+
+
+
+
+html {
+
+		font-size: 16px;
 }
 
 
@@ -12,7 +34,6 @@ body {
 		font-family: sans-serif;
 
 
-    	height: 4960px;
 
     	background-color: var(--bgColor1);
 
@@ -25,13 +46,13 @@ body {
 header {
 
 			margin: 0;
-			margin-left: 32px;
-			margin-right: 32px;
+			margin-left: 2rem;
+			margin-right: 2rem;
 			box-sizing: border-box;
 			height: 96px;
 
 
-			border-bottom: solid 1px #9D82D6;
+			border-bottom: solid 1px rgba(157, 130, 214, 0.2);
 
 }
 
@@ -58,14 +79,65 @@ header {
 			float: right;
 			color: var(--bgColor2);
 			margin-top: 32px;
+			cursor: pointer;
+			text-decoration-style: 8px;
+
 
 }
+
+
 
 span {
 
 		margin-left: 32px;
 
 }
+
+
+.hero {
+
+			background-color: var(--bgColor2);
+			color: var(--bgColor1);
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			padding-left: 16rem;
+			padding-right: 16rem;
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+
+
+}
+
+.t1 {
+
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 300;
+
+}
+
+
+.t2 {
+
+		font-size: 8rem ;
+		text-align: center;
+		font-weight: 900;
+		line-height: 1.25;
+}
+
+
+.t3 {
+
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.3rem;
+
+}
+
 
 .h1 {
 
@@ -78,6 +150,8 @@ span {
     		display: grid;
     		justify-content: center;
     		align-items: flex-end;
+    		line-height: 1;
+    		font-weight: 900;
 
 }
 
@@ -100,7 +174,7 @@ h1 {
 	width: auto;
     height: 32px;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 1rem;
     float: left;
     font-weight: 900;
 
@@ -108,7 +182,7 @@ h1 {
 
 main {
 
-		margin-top: 128px;
+		margin-top: 8rem;
 		height: auto;
 
 		float: left;
@@ -125,9 +199,9 @@ section {
 			color: var(--bgColor2);
 
 			width: 100%;
-			height: 800px;
+			height: 50rem;
 
-			margin-bottom: 128px;
+			margin-bottom: 8rem;
 
 			font-weight: 100;
 
@@ -140,14 +214,289 @@ section {
 
 }
 
+
+a {
+
+	color: #3a363a;
+	text-decoration: none;
+}
+
 footer {
 
 			width: 100%;
 			border: none;
 			border-top: solid 1px #7c7c7c;
-			height: 64px;
+			height: 4rem;
 			float: left;
 			text-align: center;
-			line-height: 64px;
+			line-height: 1.65;
+			color: #3a363a;
+			font-size: 0.8rem;
+			line-height: 5;
+}
+
+.navBtn {
+
+				display: none;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+			.links {
+
+			width: 15%;
+			height: 80px;
+			font-size: 1rem;
+			box-sizing: border-box;
+			color: var(--bgColor2);
+			cursor: pointer;
+			text-decoration-style: 8px;
+
+			border: solid 4px var(--bgColor2);
+
+			margin: 0;
+			padding: 0;
+			margin-top: 0.5rem;
+
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+
+
+
+	}
+
+	span {
+
+
+				margin: 0;
+	}
+
+
+	.navBtn {
+
+					display: none;
+	}
+
+
+	.hero {
+
+
+
+			
+}
+
+}
+
+
+@media screen and ((min-width: 816px) and (max-width: 1200px)) {
+
+
+						.hero {
+
+
+								/*padding size changes*/
+								justify-content: space-evenly;
+							    padding-left: 8rem;
+							    padding-right: 8rem;
+							    padding-top: 2rem;
+							    padding-bottom: 2rem;
+						}
+
+						.h1 {
+
+
+							font-size: 8rem;
+    						letter-spacing: 1rem;
+						}
+
+
+						.h4 {
+
+									font-size: 1.7rem;
+								    letter-spacing: 2rem;						
+
+							}
+
+
+						.t1 {
+
+								font-size: 2rem;
+							    font-weight: 300;
+
+						}
+
+						.t2 {
+
+								font-size: 7rem;
+							    text-align: center;
+							    font-weight: 900;
+							    line-height: 1.2;
+
+						}
+
+						.t3 {
+
+								    font-weight: 800;
+								    font-size: 1rem;
+
+						}
+
+
+
+}
+
+
+@media screen and (max-width: 816px) and (min-width: 640px) {
+
+
+
+
+					.h1 {
+
+							font-size: 5rem;
+						    letter-spacing: 1rem;
+
+					}
+
+
+					.h4 {
+
+							font-size: 1rem;
+						    letter-spacing: 2rem;
+
+					}
+
+
+					.hero {
+
+						    justify-content: space-evenly;
+						    padding-left: 4rem;
+						    padding-right: 4rem;
+						    padding-top: 2rem;
+						    padding-bottom: 2rem;
+
+					}
+
+
+					.t1 {
+
+
+							font-size: 1.5rem;
+					}
+
+
+					.t2 {
+
+							font-size: 5rem;
+						    line-height: 1.25;
+
+					}
+
+
+					.t3 {
+
+
+							font-size: 1rem;
+					}
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+			.links {
+
+						display: none;
+
+
+
+	}
+
+			.navBtn {
+
+
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: repeat(3, 8px);
+					height: 32px;
+					width: 10%;
+					float: right;
+
+					grid-gap: 4px;
+					margin-top: 4rem; 
+					cursor: pointer;
+
+			}
+
+
+			.line {
+
+					height: 100%;
+					width: 100%;
+					background-color: var(--bgColor2);
+			}
+
+
+			html {
+
+					/* using this quicly fixes all sizes when sizes are provided in rem
+					here 1rem = 8px for screen width less than 640px */
+
+					font-size: 8px;
+			}
+
+
+			.hero {
+
+
+
+			}
+
+
+			.t1 {
+
+
+
+			}
+
+			.t2 {
+
+
+			}
+
+
+			.t3 {
+
+
+			}
+
+
+			.h1 {
+
+				letter-spacing: 4px;
+				font-size: 8rem;
+
+			}
+
+
+			.h4 {
+
+
+					letter-spacing: 3rem;
+					font-size: 1.5rem;
+
+			}
+
+
+
 
 }
