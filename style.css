@@ -14,14 +14,6 @@
 }
 
 
-@media (max-width: 480px) {
-
-
-
-}
-
-
-
 
 html {
 
@@ -139,6 +131,14 @@ span {
 }
 
 
+.midText {
+
+
+			width: 100%;
+
+}
+
+
 .h1 {
 
 
@@ -161,11 +161,11 @@ span {
 			width: 100%;
 
 			font-size: 3rem;
-			letter-spacing: 48px;
 			text-align: center;
     		display: grid;
     		justify-content: center;
     		align-items: flex-start;
+    		text-align: center;
 }
 
 
@@ -321,7 +321,8 @@ footer {
 						.h4 {
 
 									font-size: 1.7rem;
-								    letter-spacing: 2rem;						
+								    text-align: center;
+					
 
 							}
 
@@ -371,6 +372,7 @@ footer {
 
 							font-size: 1rem;
 						    letter-spacing: 2rem;
+						    text-align: center;
 
 					}
 
@@ -491,8 +493,8 @@ footer {
 			.h4 {
 
 
-					letter-spacing: 3rem;
 					font-size: 1.5rem;
+					text-align: center;
 
 			}
 
